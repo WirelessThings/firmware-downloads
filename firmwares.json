@@ -1,2 +1,364 @@
 {
+	"Version":0.1,
+	"USB":	{
+			"Versions":["0.44", "0.45", "0.46", "0.48", "0.49", "0.55", "0.56"],
+			"FileBase":"UsbDongle"
+			},
+	"LLAP":	{
+			"Versions":["0.76", "0.77"],
+			"FileBase":"llap"
+			},
+	"LLAP2":	{
+			"Versions":[],
+			"FileBase":"llap2"
+			},
+	"Serial":{
+			"Versions":["0.73", "0.74", "0.75", "0.76", "0.81", "0.82", "0.90", "0.94"],
+			"FileBase":"SerialPassThru"
+			},
+		
+	"Devices":{
+				"XRF":	{	
+						"Device Class":"Serial",
+						"Devices":[
+									{
+									"Name":"R001 - XRF v1.5",
+									"Image URL":"",
+									"Filename Extension":"",
+									"Frequency":"24MHz",
+									"Support LLAP": true
+									}
+								]
+						},
+				"ERF":	{ 
+						"Device Class":"Serial",
+						"Devices":[
+										{
+										"Name":"R003 - ERF v0.3x",
+										"Image URL":"",
+										"Filename Extension":"ERF",
+										"Frequency":"24MHz"
+										}
+								]
+						},
+				"UARTSRF":	{	 
+							"Device Class":"Serial",
+							"Devices":	[
+											{
+											"Name":"R001 - XRF v2.x",
+											"Image URL":"",
+											"Filename Extension":"UARTSRF",
+											"Frequency":"24MHz",
+											"Support LLAP": true
+											},
+											{
+											"Name":"R003 - ERF v2.x",
+											"Image URL":"",
+											"Filename Extension":"UARTSRF",
+											"Frequency":"24MHz"										
+											},
+											{
+											"Name":"R004 - SRF v1.x",
+											"Image URL":"",
+											"Filename Extension":"UARTSRF",
+											"Frequency":"24MHz",
+											"Support LLAP": true
+											},
+											{
+											"Name":"R011 - ARF",
+											"Image URL":"",
+											"Filename Extension":"UARTSRF",
+											"Frequency":"24MHz"
+											},
+											{
+											"Name":"R017 - SRF Shield",
+											"Image URL":"",
+											"Filename Extension":"UARTSRF-115200",
+											"Frequency":"24MHz"
+											}
+										]
+						},
+				"UARTSRF-115200":{	 
+								"Device Class":"Serial",
+								"Devices":	[
+											{
+											"Name":"R017 - SRF Shield",
+											"Image URL":"",
+											"Filename Extension":"UARTSRF-115200",
+											"Frequency":"24MHz"
+											}
+										]
+								},
+				"RF328":{	
+							"Device Class":"Serial",
+							"Devices":	[
+										{
+										"Name":"R012 - RFu-328",
+										"Image URL":"",
+										"Filename Extension":"RF328",
+										"Frequency":"24MHz"
+										}
+									]
+						},
+				"SOR":	{
+						"Device Class":"Serial",
+						"Devices":[
+									{
+									"Name":"R016 - Slice of Radio",
+									"Image URL":"",
+									"Filename Extension":"SORSRF",
+									"Frequency":"24MHz"
+									}
+								]
+						},
+				"USB":	{
+						"Device Class":"USB",
+						"Devices":[
+									{
+									"Name":"R002 - URF",
+									"Image URL":"",
+									"Filename Extension":"",
+									"Frequency":""
+									},
+									{
+									"Name":"R010 - SRF-Stick",
+									"Image URL":"",
+									"Filename Extension":"",
+									"Frequency":""
+									},
+									{
+									"Name":"R021 - Voyager+",
+									"Image URL":"",
+									"Filename Extension":"",
+									"Frequency":""
+									},
+									{
+									"Name":"B009 - Explorer Plus",
+									"Image URL":"",
+									"Filename Extension":"",
+									"Frequency":""
+									}
+								]
+						},							
+				"XINORF":{
+						"Device Class":"USB",
+						"Devices":[
+									{
+									"Name":"B008 - XinoRF",
+									"Image URL":"",		
+									"Filename Extension":"XINORF",
+									"Frequency":""
+									}
+								]
+						},
+				"APANALOG":{
+							"Device Class":"LLAP",
+							"Devices":	[
+										{
+										"Name":"R001 - XRF v1.5",
+										"Image URL":"",		
+										"Filename Extension":"Analog",
+										"Frequency":"24MHz",
+										"Serial Firmware": "XRF"										
+										},
+										{
+										"Name":"R001 - XRF v2.x",
+										"Image URL":"",		
+										"Filename Extension":"Analog",
+										"Frequency":"24MHz",										
+										"Serial Firmware": "UARTSRF"
+										}
+									]
+							},
+				"BUTTON":	{
+							"Device Class":"LLAP",
+							"Devices":	[
+										{
+										"Name":"R001 - XRF v1.5",
+										"Image URL":"",		
+										"Filename Extension":"Button",
+										"Frequency":"24MHz",
+										"Serial Firmware": "XRF"
+										},
+										{
+										"Name":"R001 - XRF v2.x",
+										"Image URL":"",		
+										"Filename Extension":"ButtonV3XRFV2",
+										"Frequency":"24MHz",
+										"Serial Firmware": "UARTSRF"
+										}							
+									]
+							},
+				"BUTTONEXT":{
+								"Device Class":"LLAP",
+								"Devices":	[
+											{
+											"Name":"R001 - XRF v1.5",
+											"Image URL":"",		
+											"Filename Extension":"ButtonExt",
+											"Frequency":"24MHz",
+											"Serial Firmware": "XRF"
+											},
+											{
+											"Name":"R001 - XRF v2.x",
+											"Image URL":"",		
+											"Filename Extension":"ButtonExt",
+											"Frequency":"24MHz",
+											"Serial Firmware": "UARTSRF"
+											}
+										]
+							},
+				"COUNTER":	{
+							"Device Class":"LLAP",
+							"Devices":	[
+										{
+										"Name":"R001 - XRF v1.5",
+										"Image URL":"",		
+										"Filename Extension":"Count",
+										"Frequency":"24MHz",
+										"Serial Firmware": "XRF"
+										},
+										{
+										"Name":"R001 - XRF v2.x",
+										"Image URL":"",		
+										"Filename Extension":"Count",
+										"Frequency":"24MHz",
+										"Serial Firmware": "UARTSRF"
+										}							
+									]
+							},
+				"TEMPSENSOR":{
+							"Device Class":"LLAP",
+							"Devices":	[
+										{
+										"Name":"R001 - XRF v1.5",
+										"Image URL":"",		
+										"Filename Extension":"Dallas",
+										"Frequency":"24MHz",
+										"Serial Firmware": "XRF"
+										},
+										{
+										"Name":"R001 - XRF v2.x",
+										"Image URL":"",		
+										"Filename Extension":"Dallas",
+										"Frequency":"24MHz",
+										"Serial Firmware": "UARTSRF"
+										}
+									]
+							},
+				"APGENERIC":{
+							"Device Class":"LLAP",
+							"Devices":	[
+										{
+										"Name":"R001 - XRF v1.5",
+										"Image URL":"",		
+										"Filename Extension":"Generic",
+										"Frequency":"24MHz",
+										"Serial Firmware": "XRF"
+										},
+										{
+										"Name":"R001 - XRF v2.x",
+										"Image URL":"",		
+										"Filename Extension":"GenericXRFV2",
+										"Frequency":"24MHz",
+										"Serial Firmware": "UARTSRF"
+										}							
+									]
+							},
+				"APLDR":	{
+							"Device Class":"LLAP",
+							"Devices":	[
+										{
+										"Name":"R001 - XRF v1.5",
+										"Image URL":"",		
+										"Filename Extension":"LDR",
+										"Frequency":"24MHz",
+										"Serial Firmware": "XRF"
+										},
+										{
+										"Name":"R001 - XRF v2.x",
+										"Image URL":"",		
+										"Filename Extension":"LDR",
+										"Frequency":"24MHz",
+										"Serial Firmware": "UARTSRF"
+										}
+									]
+							},
+				"ONEBUTTON":{
+							"Device Class":"LLAP",
+							"Devices":	[
+										{
+										"Name":"R001 - XRF v1.5",
+										"Image URL":"",		
+										"Filename Extension":"OneButton",
+										"Frequency":"24MHz",
+										"Serial Firmware": "XRF"
+										},
+										{
+										"Name":"R001 - XRF v2.x",
+										"Image URL":"",		
+										"Filename Extension":"OneButton",
+										"Frequency":"24MHz",
+										"Serial Firmware": "UARTSRF"
+										}
+									]
+							},
+				"APPWM":	{
+							"Device Class":"LLAP",
+							"Devices":	[
+										{
+										"Name":"R001 - XRF v1.5",
+										"Image URL":"",		
+										"Filename Extension":"PWM",
+										"Frequency":"24MHz",
+										"Serial Firmware": "XRF"
+										},
+										{
+										"Name":"R001 - XRF v2.x",
+										"Image URL":"",		
+										"Filename Extension":"PWMXRFV2",
+										"Frequency":"24MHz",
+										"Serial Firmware": "UARTSRF"
+										}							
+									]
+							},
+				"APRELAY":	{
+							"Device Class":"LLAP",
+							"Devices":	[
+										{
+										"Name":"R001 - XRF v1.5",
+										"Image URL":"",		
+										"Filename Extension":"Relay",
+										"Frequency":"24MHz",
+										"Serial Firmware": "XRF"
+										},
+										{
+										"Name":"R001 - XRF v2.x",
+										"Image URL":"",		
+										"Filename Extension":"Relay",
+										"Frequency":"24MHz",
+										"Serial Firmware": "UARTSRF"
+										}
+									]
+							},
+				"APTHERM":	{
+							"Device Class":"LLAP",
+							"Devices":	[
+										{
+										"Name":"R001 - XRF v1.5",
+										"Image URL":"",		
+										"Filename Extension":"Thermistor",
+										"Frequency":"24MHz",
+										"Serial Firmware": "XRF"
+										},
+										{
+										"Name":"R001 - XRF v2.x",
+										"Image URL":"",		
+										"Filename Extension":"Thermistor",
+										"Frequency":"24MHz",
+										"Serial Firmware": "UARTSRF"
+										}
+									]
+							}
+				}
 }
