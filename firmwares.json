@@ -100,7 +100,7 @@
 										}
 									]
 						},
-				"SOR":	{
+				"SORSRF":	{
 						"Device Class":"Serial",
 						"Devices":[
 									{
