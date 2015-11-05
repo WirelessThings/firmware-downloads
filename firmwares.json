@@ -1,11 +1,11 @@
 {
 	"Version":0.1,
 	"USB":	{
-			"Versions":["0.56"],
+			"Versions":["0.56","59"],
 			"FileBase":"UsbDongle"
 			},
 	"LLAP":	{
-			"Versions":["0.77"],
+			"Versions":["0.77","80"],
 			"FileBase":"llap"
 			},
 	"LLAP2":	{
@@ -13,7 +13,7 @@
 			"FileBase":"llap2"
 			},
 	"Serial":{
-			"Versions":["0.94"],
+			"Versions":["0.94","95"],
 			"FileBase":"SerialPassThru"
 			},
 		
