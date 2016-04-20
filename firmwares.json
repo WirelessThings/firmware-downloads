@@ -5,7 +5,7 @@
 			"FileBase":"UsbDongle"
 			},
 	"LLAP":	{
-			"Versions":["0.77","80","82"],
+			"Versions":["0.77","80","82", "83"],
 			"FileBase":"llap"
 			},
 	"LLAP2":	{
@@ -306,6 +306,26 @@
 										"Name":"R001 - XRF v2.x",
 										"Image URL":"",		
 										"Filename Extension":"OneButton",
+										"Frequency":"24MHz",
+										"Serial Firmware": "UARTSRF"
+										}
+									]
+							},
+				ONEBUTV2{
+							"Device Class":"LLAP",
+							"Description": "One Button V2",
+							"Devices":	[
+										{
+										"Name":"R001 - XRF v1.5",
+										"Image URL":"",		
+										"Filename Extension":"OneButtonV2",
+										"Frequency":"24MHz",
+										"Serial Firmware": "XRF"
+										},
+										{
+										"Name":"R001 - XRF v2.x",
+										"Image URL":"",		
+										"Filename Extension":"OneButtonV2",
 										"Frequency":"24MHz",
 										"Serial Firmware": "UARTSRF"
 										}
